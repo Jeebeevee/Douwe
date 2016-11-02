@@ -49,6 +49,22 @@ def water(text, nick, action):
 
     action("geeft {} een groot glas koud water!".format(user))
 
+@asyncio.coroutine
+@hook.command(autohelp=False)
+def taart(text, nick, action):
+    """<user> - gives <user> a nice cake"""
+    if text != '':
+        user = text.strip()
+    else:
+        user = nick
+
+    if not is_valid(user):
+        return "Die kan ik geen taart geven."
+
+    slagroom = random.choice([' met een toefje slagroom', '', ''])
+
+    action("geeft {} een groot stuk appeltaart{}!".format(user, slagroom))
+
 
 @asyncio.coroutine
 @hook.command(autohelp=False)
