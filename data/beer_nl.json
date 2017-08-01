@@ -1,0 +1,23 @@
+{
+  "templates": [
+    "geeft {user} een {container} met {beer}."
+  ],
+  "parts": {
+    "container": [
+      "glas",
+      "pul",
+      "vaasje",
+      "fluitje",
+      "mok",
+      "pint"
+    ],
+    "beer": [
+      "Grolsch",
+      "Hertog Jan",
+      "Palm",
+      "Oranjeboom",
+      "Kriek",
+      "Alfa"
+    ]
+  }
+}

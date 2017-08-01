@@ -31,8 +31,44 @@ def load_foods(bot):
     with codecs.open(os.path.join(bot.data_dir, "tea_nl.json"), encoding="utf-8") as f:
         tea_data = json.load(f)
 
-    with codecs.open(os.path.join(bot.data_dir, "beer.json"), encoding="utf-8") as f:
+    with codecs.open(os.path.join(bot.data_dir, "beer_nl.json"), encoding="utf-8") as f:
         beer_data = json.load(f)
+
+
+
+
+@asyncio.coroutine
+@hook.command(autohelp=False)
+def menu(text, nick, action):
+   action("heeft op het menu staan: !water, !koffie, !thee, !choco, !bier, !port, !koekje, !chocola en !taart")
+
+@asyncio.coroutine
+@hook.command("oranje", "bitter", "tompoes", "koning", autohelp=False)
+def oranje(text, nick, action):
+    """<user> - gives <user> a nice chocolatebar"""
+    if text != '':
+        user = text.strip()
+    else:
+        user = nick
+
+    if not is_valid(user):
+        return "Leve de Koning."
+
+    action("geeft {} een oranjebitter en een dikke Tompoes!".format(user))
+
+@asyncio.coroutine
+@hook.command(autohelp=False)
+def chocolade(text, nick, action):
+    """<user> - gives <user> a nice chocolatebar"""
+    if text != '':
+        user = text.strip()
+    else:
+        user = nick
+
+    if not is_valid(user):
+        return "Hier kan ik geen chocola van maken."
+
+    action("geeft {} een grote reep tony chocolony chocolade!".format(user))
 
 
 @asyncio.coroutine
@@ -119,10 +155,9 @@ def koekje(text, nick, action):
     size = random.choice(['klein', 'normaal', 'groot', 'enorme'])
     flavor = random.choice(['lekker', 'smerig', 'verrukelijk'])
     method = random.choice(['maakt voor', 'geeft aan', 'koopt voor'])
-    side_dish = random.choice(['glas melk', 'kom ijs', 'kom chocolade saus'])
 
-    action("{} {} een {} {} {}koek met een {}!".format(method, user, flavor, size, cookie_type, side_dish))
-
+    action("{} {} een {} {} {}koek!".format(method, user, flavor, size, cookie_type))
+    #action("{} {} een lekker groot hartjes koekje!".format(method, user))
 
 @asyncio.coroutine
 @hook.command(autohelp=False)

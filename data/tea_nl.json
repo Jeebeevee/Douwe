@@ -1,0 +1,28 @@
+{
+  "templates": [
+    "geeft {user} een {size} {temperature} {tea}!"
+  ],
+  "parts": {
+    "temperature": [
+      "warme",
+      "hete"
+    ],
+    "size": [
+      "grootte",
+      "normale",
+      "kleine"
+     ],
+    "tea": [
+      "chai thee",
+      "english breakfast",
+      "Earl Grey",
+      "slaapthee",
+      "oolong thee",
+      "groene thee",
+      "yerba mate",
+      "rooibos thee",
+      "bubble thee",
+      "thai thee"
+    ]
+   }
+}

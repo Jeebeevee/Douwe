@@ -14,6 +14,7 @@ def help_command(text, chan, conn, bot, notice, message, has_permission):
     :type conn: cloudbot.client.Client
     :type bot: cloudbot.bot.CloudBot
     """
+    #message("...I need somebody ...(https://www.youtube.com/watch?v=yWP6Qki8mWc)")
     if text:
         searching_for = text.lower().strip()
         if not re.match(r'^\w+$', searching_for):

@@ -1,0 +1,19 @@
+{
+  "templates": [
+    "geeft {user} een {temperature} {coffee}!"
+  ],
+  "parts": {
+    "temperature": [
+      "hete",
+      "warme"
+    ],
+    "coffee": [
+      "Cappuccino",
+      "Espresso",
+      "Koffie verkeerd",
+      "Koffie",
+      "Dokkemer koffie",
+      "Senseo"
+    ]
+  }
+}

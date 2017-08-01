@@ -1,0 +1,179 @@
+{
+    "connections": [
+        {
+            "acls": {},
+            "avoid_notices": false,
+            "channels": [
+                "#dutchops hetishieromtegieren",
+                "#dutch"
+            ],
+            "command_prefix": "!",
+            "connection": {
+                "ignore_cert": true,
+                "password": "",
+                "port": 6667,
+                "server": "chat.scoutlink.net",
+                "ssl": false
+            },
+            "disabled_commands": ["mc_ask", "mc_claims", "mc_irc", "mc_roles"],
+            "name": "Douwe",
+            "nick": "Douwe",
+            "nickserv": {
+                "enabled": true,
+                "nickserv_command": "IDENTIFY",
+                "nickserv_name": "nickserv",
+                "nickserv_password": "J4tr13",
+                "nickserv_user": "Douwe"
+            },
+            "oper": {
+                "enabled": false,
+                "oper_pass": "J4tr13",
+                "oper_user": "Douwe"
+            },
+            "permissions": {
+                "admins": {
+                    "perms": [
+                        "addfactoid",
+                        "delfactoid",
+                        "ignore",
+                        "botcontrol",
+                        "plpaste",
+                        "permissions_users",
+                        "op",
+                        "jotico",
+                        "jachtgame"
+                    ],
+                    "users": [
+                        "*!~Jeebeevee@ircop.scoutlink.net",
+                        "*!~geejee@coord.scoutlink.net",
+                        "*!*@ircop.scoutlink.net",
+                        "*!~*@ircop.scoutlink.net"
+                    ]
+                }
+            },
+            "plugins": {},
+            "auto_rejoin": true,
+            "invite_join": false,
+            "ratelimit": {
+                "max_tokens": 17.5,
+                "message_cost": 5,
+                "restore_rate": 2.5,
+                "strict": true
+            },
+            "user": "Egberts"
+        },
+        {
+            "acls": {},
+            "avoid_notices": false,
+            "channels": [
+                "#minecraft"
+            ],
+            "command_prefix": "!",
+            "connection": {
+                "ignore_cert": true,
+                "password": "",
+                "port": 6667,
+                "server": "chat.scoutlink.net",
+                "ssl": false
+            },
+            "disabled_commands": ["about", "adduser", "base64", "beer", "bier", "brekky", "cake", "capitalize", "cheese", "chicken", "choco", "color_parse", "cookie", "cycle", "debase64", "deluser", "derpify", "escape", "flushlog", "gperms", "groups", "gusers", "hash", "icecream", "isbase64", "jacht", "jachtadmin", "join", "keto", "koekje", "koffie", "leet", "length", "lower", "me", "message", "muffin", "munge", "nick", "noodles", "pancake","part", "port", "potato", "punten", "q", "qrcode", "rainbow", "raw", "reverse", "rot13", "sandwich", "stop", "superscript", "swapcase", "system", "taart", "taco", "thee", "titlecase", "ugroups", "unescape", "uperms", "upper", "usa", "water", "wrainbow"],
+            "name": "Steve",
+            "nick": "Steve",
+            "nickserv": {
+                "enabled": true,
+                "nickserv_command": "IDENTIFY",
+                "nickserv_name": "nickserv",
+                "nickserv_password": "J4tr13",
+                "nickserv_user": "steve"
+            },
+            "oper": {
+                "enabled": false,
+                "oper_pass": "",
+                "oper_user": ""
+            },
+            "permissions": {
+                "admins": {
+                    "perms": [
+                        "addfactoid",
+                        "delfactoid",
+                        "ignore",
+                        "botcontrol",
+                        "plpaste",
+                        "permissions_users",
+                        "op",
+                        "jotico",
+                        "jachtgame"
+                    ],
+                    "users": [
+                        "*!~Jeebeevee@ircop.scoutlink.net",
+                        "*!*@ircop.scoutlink.net",
+                        "*!~*@ircop.scoutlink.net"
+                    ]
+                }
+            },
+            "plugins": {},
+            "auto_rejoin": true,
+            "invite_join": false,
+            "ratelimit": {
+                "max_tokens": 17.5,
+                "message_cost": 5,
+                "restore_rate": 2.5,
+                "strict": true
+            },
+            "user": "Steve"
+        }
+    ],
+    "database": "sqlite:///douwebot.db",
+    "logging": {
+        "console_debug": false,
+        "file_debug": true,
+        "raw_file_log": true,
+        "show_motd": false,
+        "show_plugin_loading": true,
+        "show_server_info": true
+    },
+    "api_keys": {
+        "bing_azure": "",
+        "google_cse_id": "",
+        "google_dev_key": "",
+        "imgur_client_id": "",
+        "imgur_client_secret": "",
+        "lastfm": "",
+        "octopart": "",
+        "rdio_key": "",
+        "rdio_secret": "",
+        "rottentomatoes": "",
+        "soundcloud": "",
+        "tvdb": "",
+        "twitter_access_secret": "",
+        "twitter_access_token": "",
+        "twitter_consumer_key": "",
+        "twitter_consumer_secret": "",
+        "wolframalpha": "",
+        "wordnik": "",
+        "wunderground": ""
+    },
+    "mysql": {
+        "dbhost": "localhost",
+        "dbname": "slnl_bot",
+        "dbpass": "XtZ0495M",
+        "dbuser": "slnl_bot"
+    },
+    "plugin_loading": {
+        "blacklist": [
+            "update"
+        ],
+        "use_whitelist": false,
+        "whitelist": []
+    },
+    "reloading": {
+        "config_reloading": true,
+        "plugin_reloading": true
+    },
+    "web": {
+        "address": "0.0.0.0",
+        "bot_name": "CloudBot",
+        "enabled": false,
+        "port": 8090
+    }
+}
